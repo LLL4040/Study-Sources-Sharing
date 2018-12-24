@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="static/img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Study Sources Sharing</title>
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="static/css/linearicons.css">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/magnific-popup.css">
+	<link rel="stylesheet" href="static/css/nice-select.css">
+	<link rel="stylesheet" href="static/css/animate.min.css">
+	<link rel="stylesheet" href="static/css/owl.carousel.css">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div></div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active"><a href="index">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="sources">Sources</a></li>
+						<li><a href="upload">Upload</a></li>
+						<li><a href="contact">Contact</a></li>
+						<li><a href="login">Login</a></li>
+						<li><a href="page-keep">Manager</a></li>
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+
+	<!-- Start Banner Area -->
+	<section class="home-banner-area relative">
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="banner-content col-lg-8 col-md-12">
+					<h1 class="wow fadeIn" data-wow-duration="4s">Study Sources Sharing</h1>
+					<p class="text-white">
+						在这里，你可以找到想要的学习资源，也可以和大家分享你的资源。<br>
+						输入关键字搜索资源↓
+					</p>
+
+					<div class="input-wrap">
+						<form method="get" action="search" class="form-box d-flex justify-content-between">
+						    {% csrf_token %}
+						    <input class="form-control" type="search" name="do-search" placeholder="搜索" required>
+						    <button type="submit" class="btn search-btn">搜索</button>
+						</form>
+					</div>
+
+					<h4 class="text-white">热门资源</h4>
+					<div class="courses pt-20">
+						<a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">高等数学</a>
+						<a href="#" data-wow-duration="1s" data-wow-delay=".6s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">线性代数</a>
+						<a href="#" data-wow-duration="1s" data-wow-delay=".9s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">大学物理</a>
+						<a href="#" data-wow-duration="1s" data-wow-delay=".9s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">数据结构</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rocket-img">
+			<img src="static/img/rocket.png" alt="">
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap">
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-lg-5 col-md-6 about-left">
+					<img class="img-fluid" src="static/img/about.jpg" alt="">
+				</div>
+				<div class="offset-lg-1 col-lg-6 offset-md-0 col-md-12 about-right">
+					<h1>
+						这里有来自师生的各类优秀资源
+					</h1>
+					<div class="wow fadeIn" data-wow-duration="1s">
+						<p>
+							课程太难？老师进度太快？没有预习或复习的材料？来到这里，你可以找到各种各样的学习资源。如果没有，你也可以通过留言的方式得到他人的分享。当然也十分欢迎你与他人共享资源。
+						</p>
+					</div>
+					<a href="sources" class="primary-btn">Explore Sources</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+
+	<!-- Start Sources Area -->
+	<section class="courses-area section-gap">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 about-right">
+					<h1>
+						这些是已有的资源模块
+					</h1>
+					<div class="wow fadeIn" data-wow-duration="1s">
+						<p>
+							欢迎联系我们提出新的模块需求
+						</p>
+					</div>
+					<a href="sources" class="primary-btn">Explore Sources</a>
+				</div>
+				<div class="offset-lg-1 col-lg-6">
+					<div class="courses-right">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<ul class="courses-list">
+									<li>
+										<a class="wow fadeInLeft" href="sources" data-wow-duration="1s" data-wow-delay=".1s">
+											<i class="fa fa-book"></i> 数学类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInLeft" href="sources" data-wow-duration="1s" data-wow-delay=".3s">
+											<i class="fa fa-book"></i> 软件类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInLeft" href="sources" data-wow-duration="1s" data-wow-delay=".5s">
+											<i class="fa fa-book"></i> 物理类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInLeft" href="sources" data-wow-duration="1s" data-wow-delay=".7s">
+											<i class="fa fa-book"></i> 人文类
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<ul class="courses-list">
+									<li>
+										<a class="wow fadeInRight" href="sources" data-wow-duration="1s" data-wow-delay=".7s">
+											<i class="fa fa-book"></i> 经济类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInRight" href="sources" data-wow-duration="1s" data-wow-delay=".5s">
+											<i class="fa fa-book"></i> 金融类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInRight" href="sources" data-wow-duration="1s" data-wow-delay=".3s">
+											<i class="fa fa-book"></i> 化学类
+										</a>
+									</li>
+									<li>
+										<a class="wow fadeInRight" href="sources" data-wow-duration="1s" data-wow-delay=".1s">
+											<i class="fa fa-book"></i> 实验类
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Courses Area -->
+
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-9 single-footer-widget">
+					<h4>Quick Links</h4>
+					<ul>
+						<li><a href="http://www.phycai.sjtu.edu.cn/?tdsourcetag=s_pctim_aiomsg">上海交通大学国家工科基础课程物理教学基地</a></li>
+						<li><a href="http://electsys.sjtu.edu.cn/edu/">
+						上海交通大学教学信息服务网</a></li>
+						<li><a href="http://jwc.sjtu.edu.cn/web/sjtu/198001.htm">
+						上海交通大学教务处</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-md-9 single-footer-widget">
+					<h4>Contact Us</h4>
+					<p>你可以向下面的邮箱发送邮件来联系我们，我们会尽快予以答复</p>
+					<a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">2293114926@QQ.COM</a>
+					<a href="#" data-wow-duration="1s" data-wow-delay=".3s" class="primary-btn transparent mr-10 mb-10 wow fadeInDown">1425439522@QQ.COM</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="static/js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="static/js/vendor/bootstrap.min.js"></script>
+	<script src="static/js/easing.min.js"></script>
+	<script src="static/js/hoverIntent.js"></script>
+	<script src="static/js/superfish.min.js"></script>
+	<script src="static/js/jquery.ajaxchimp.min.js"></script>
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/owl-carousel-thumb.min.js"></script>
+	<script src="static/js/jquery.sticky.js"></script>
+	<script src="static/js/jquery.nice-select.min.js"></script>
+	<script src="static/js/parallax.min.js"></script>
+	<script src="static/js/waypoints.min.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script src="static/js/jquery.counterup.min.js"></script>
+	<script src="static/js/mail-script.js"></script>
+	<script src="static/js/main.js"></script>
+</body>
+
+</html>

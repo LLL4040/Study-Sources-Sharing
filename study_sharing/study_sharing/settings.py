@@ -123,7 +123,7 @@ STATICFILES_DIRS = [
 ]
 
 
-LOGIN_URL = '/page-login'
+LOGIN_URL = '/login'
 LOGIN_REDIRECT_URL='/page-keep'
 
 
