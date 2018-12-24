@@ -6,11 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<form method="get" action="page-download">
-    {% csrf_token %}
-    <input type="search" name="do-search" placeholder="搜索" required>
-    <button type="submit">搜索</button>
-</form>
 <table>
     <tr>
         <th>现有资源</th>
@@ -19,8 +14,8 @@
     <tr>
         <td>{{data}}</td>
         <td>
-            <form method="post" action="page-download" onsubmit="return">
-            <button type="submit" method="post" class="btn btn-info" name="{{data}}">下载</button>
+            <form method="post" action="page-keep" onsubmit="return">{% csrf_token %}
+            <button type="submit" method="post" class="btn btn-info" name="{{data}}">删除</button>
         </td>
     </tr>
     {% endfor %}

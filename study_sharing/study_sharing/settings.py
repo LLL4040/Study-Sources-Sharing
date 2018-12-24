@@ -121,3 +121,18 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'), 
 ]
+
+
+LOGIN_URL = '/page-login'
+LOGIN_REDIRECT_URL='/page-keep'
+
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'  
+SESSION_CACHE_ALIAS = 'default'
+SESSION_COOKIE_NAME = "sessionid"
+SESSION_COOKIE_PATH = "/"
+SESSION_COOKIE_DOMAIN = None 
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_AGE = 1209600
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
